@@ -37,6 +37,14 @@ export default async function RootLayout({
       )}
     >
       <head>
+        {/* Performance optimizations */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        
+        {/* Preload critical resources */}
+        <link rel="preload" href="/images/avatar.jpg" as="image" />
+        
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{

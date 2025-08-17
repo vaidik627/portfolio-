@@ -1,0 +1,19 @@
+.hover {
+    border: 1px solid var(--neutral-alpha-weak);
+    transition: all 0.3s ease;
+
+    &:hover {
+        border: 1px solid var(--neutral-alpha-medium);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-l);
+    }
+}
+
+.image {
+    transition: var(--transition-micro-medium);
+    transform: scale(1);
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}

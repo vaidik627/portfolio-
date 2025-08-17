@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Vaidik",
+  lastName: "Sharma",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Ml Engineer, Data Scientist",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "vaidik627@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,12 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/vaidik627",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "http://linkedin.com/in/vaidik-sharma-a5b629315",
   },
   {
     name: "Threads",
@@ -55,7 +55,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Transforming data into intelligent insights</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -63,8 +63,8 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Vaidik, an ML Engineer and Data Scientist who transforms raw data into intelligent solutions.
+      <br /> I specialize in machine learning, predictive analytics, and building AI-powered applications.
     </>
   ),
 };
@@ -90,9 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Vaidik is a passionate ML Engineer and Data Scientist based in Indore, with expertise in transforming complex data challenges into actionable insights. His work spans machine learning model development, data analysis, predictive analytics, and the intersection of artificial intelligence with real-world applications.
       </>
     ),
   },
@@ -101,58 +99,71 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "IntrnForte",
+        timeframe: "Jan 2025 - July 2025",
+        role: "Trainee-Software Developer",
+
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Actively seeking opportunities to leverage my skills in software development and competitive programming, 
+            while contributing to tech-driven environments that emphasize clean code and structured problem-solving.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Passionate developer dedicated to crafting elegant solutions through innovative coding practices and algorithmic thinking.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "Chain Optimization",
             width: 16,
             height: 9,
           },
+          {
+            src: "/images/projects/project-01/cover-010.jpg",
+            alt: "Version-Controlled",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-010.jpg",
+            alt: "Version-Controlled",
+            width: 16,
+            height: 9,
+            style: {
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto", // Centers the image within its container
+              width: "50%", // Optional: reduces width to fit better if needed
+            }
+
+          },
         ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Academic Background",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "St. Paul Higher Secondary School",
+        description: (
+          <>
+            Completed Class 10 with <strong>67%</strong> (CBSE) and Class 12 with <strong>63%</strong> (CBSE),
+            building a strong academic foundation in science and mathematics.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore",
+        description: (
+          <>
+            Pursuing <strong>B.Tech in Computer Science</strong>, currently in the <strong>7th semester</strong> 
+            with an impressive <strong>CGPA of 8.55</strong>, focusing on software development, data structures, and algorithms.
+          </>
+        ),
       },
     ],
   },
@@ -196,13 +207,13 @@ const about = {
   },
 };
 
-const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+const achievement = {
+  path: "/achievement",
+  label: "Achievement",
+  title: "Certificates & Achievements",
+  description: `Technical certifications and achievements earned by ${person.name}`,
+  // Create new achievement entries by adding a new .mdx file to app/achievement/certificates
+  // All certificates will be listed on the /achievement route
 };
 
 const work = {
@@ -214,55 +225,40 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
+const contact = {
+  path: "/contact",
+  label: "Contact",
+  title: `Contact – ${person.name}`,
+  description: `Get in touch with ${person.name} for collaborations and inquiries`,
+  headline: "Let's Connect",
+  subline: "I'd love to collaborate or answer any queries. Drop me a message!",
+  form: {
+    title: "Send a Message",
+    fields: {
+      name: {
+        label: "Name",
+        placeholder: "Your name",
+        required: true,
+      },
+      email: {
+        label: "Email",
+        placeholder: "your.email@example.com",
+        required: true,
+      },
+      message: {
+        label: "Message",
+        placeholder: "Tell me about your project or inquiry...",
+        required: true,
+      },
     },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+    submit: "Send Message",
+  },
+  info: {
+    title: "Other Ways to Connect",
+    email: person.email,
+    phone: "+91 98765 43210", // You can update this with your actual phone number
+    location: "Indore, India",
+  },
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, achievement, work, contact };
